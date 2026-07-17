@@ -13,7 +13,11 @@
     window.$docsify = {
       name: 'Certificación SAA-C03',
       homepage: 'README.md',
-      loadSidebar: 'sidebar.md' // <-- Le decimos el nombre exacto sin guion bajo
+      loadSidebar: 'sidebar.md',
+      // ESTO OBLIGA A DOCSIFY A USAR TU SIDEBAR.MD EN CUALQUIER RUTA
+      alias: {
+        '/.*/sidebar.md': '/sidebar.md'
+      },
       subMaxLevel: 2
     }
   </script>
