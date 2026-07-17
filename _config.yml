@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman
+title: AWS SAA-C03 Certificación
+description: Apuntes y recursos para el examen de AWS Solutions Architect Associate
+
+# Esto obliga a GitHub a generar una interfaz limpia sin menús superiores rotos
+show_downloads: false
