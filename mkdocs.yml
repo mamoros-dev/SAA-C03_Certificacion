@@ -1,9 +1,10 @@
+docs_dir: '.'
 site_name: Mis Apuntes de AWS SAA-C03
 theme:
   name: material
   palette:
-    scheme: slate # Modo oscuro por defecto para estudiar cómodo
-    primary: orange # Color AWS
+    scheme: slate
+    primary: orange
 
 nav:
   - Inicio: README.md
