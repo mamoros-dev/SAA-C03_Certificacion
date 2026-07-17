@@ -1,4 +1,4 @@
-name: Desplegar Notas AWS
+name: Desplegar Notas AWS con Jekyll
 
 on:
   push:
@@ -24,10 +24,15 @@ jobs:
         uses: actions/checkout@v4
       - name: Configurar Pages
         uses: actions/configure-pages@v5
-      - name: Subir Archivos
+      - name: Compilar con Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Subir Web Compilada
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: ./_site
       - name: Desplegar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
