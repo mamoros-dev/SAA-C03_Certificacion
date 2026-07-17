@@ -1,0 +1,37 @@
+site_name: Mis Apuntes de AWS SAA-C03
+theme:
+  name: material
+  palette:
+    scheme: slate # Modo oscuro por defecto para estudiar cómodo
+    primary: orange # Color AWS
+
+nav:
+  - Inicio: README.md
+  - Tema 0: 00_Introduccion_global.md
+  - Tema 1: 01_IAM.md
+  - Tema 2: 02_EC2_fundamentos.md
+  - Tema 3: 03_EC2_SAA.md
+  - Tema 4: 04_EBS.md
+  - Tema 5: 05_AltaDisponibilidad_Escabilidad.md
+  - Tema 6: 06_RDS_BaseDeDatos.md
+  - Tema 7: 07_DNS.md
+  - Tema 8: 08_Arquitecturas.md
+  - Tema 9: 09_S3.md
+  - Tema 10: S3_avanzado.md
+  - Tema 11: S3_seguridad.md
+  - Tema 12: 12_Cloudfront.md
+  - Tema 13: 13_AWS_Snow.md
+  - Tema 14: 14_Desacoplamiento.md
+  - Tema 15: 15_Contenedores.md
+  - Tema 16: 16_Serveless.md
+  - Tema 17: 17_BaseDatos.md
+  - Tema 18: 18_Datos_Analiticas.md
+  - Tema 19: 19_MachineLearning.md
+  - Tema 20: 20_Monitorizacion.md
+  - Tema 21: 21_Organizaciones.md
+  - Tema 22: 22_Cifrado.md
+  - Tema 23: 23_VPC_Networking.md
+  - Tema 24: 24_RecuperacionDesastres.md
+  - Tema 25: 25_OtrosServicios.md
+  - Tema 26: 26_Whitepapers.md
+  - Tema 27: 27_Examen.md
