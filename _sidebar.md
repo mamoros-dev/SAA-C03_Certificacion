@@ -1,5 +1,5 @@
 <!-- _sidebar.md -->
-* [Inicio](SAA.md)
+* [Inicio](README.md)
 * [Tema 0: Introducción](00_Introduccion_global.md)
 * [Tema 1: IAM](01_IAM.md)
 * [Tema 2: EC2 Fundamentos](02_EC2_fundamentos.md)
