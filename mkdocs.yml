@@ -1,3 +1,4 @@
+docs_dir: '.'
 site_name: AWS SAA-C03 Certificación
 site_description: Apuntes modernos para la certificación de AWS
 
