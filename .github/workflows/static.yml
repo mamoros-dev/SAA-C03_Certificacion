@@ -1,8 +1,8 @@
-name: Desplegar Web de Apuntes Moderna
+name: Desplegar Notas AWS
 
 on:
   push:
-    branches: ["main"] # Cambia a "master" si tu rama principal se llama así
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -22,18 +22,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - name: Instalar MkDocs Material
-        run: pip install mkdocs-material
-      - name: Compilar Sitio Web
-        run: mkdocs build --site-dir _site
-      - name: Subir a GitHub Pages
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Subir Archivos
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
-      - name: Desplegar
+          path: '.'
+      - name: Desplegar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
