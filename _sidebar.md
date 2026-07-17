@@ -1,4 +1,3 @@
-<!-- _sidebar.md -->
 * [Inicio](README.md)
 * [Tema 0: Introducción](00_Introduccion_global.md)
 * [Tema 1: IAM](01_IAM.md)
