@@ -1,8 +1,0 @@
-remote_theme: jekyll/minima
-
-title: AWS SAA-C03 Certificación
-description: Mis apuntes y recursos para el examen de AWS Solutions Architect Associate
-
-# Configura las pestañas del menú superior automáticamente usando tus archivos
-header_pages:
-  - README.md

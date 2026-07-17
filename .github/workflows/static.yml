@@ -1,8 +1,8 @@
-name: Desplegar Jekyll de forma automatica
+name: Desplegar Web de Apuntes Moderna
 
 on:
   push:
-    branches: ["main"] # Si tu rama principal se llama master, cambia "main" por "master"
+    branches: ["main"] # Cambia a "master" si tu rama principal se llama así
 
 permissions:
   contents: read
@@ -22,17 +22,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - name: Configurar Python
+        uses: actions/setup-python@v5
         with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
+          python-version: 3.x
+      - name: Instalar MkDocs Material
+        run: pip install mkdocs-material
+      - name: Compilar Sitio Web
+        run: mkdocs build --site-dir _site
+      - name: Subir a GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
-      - name: Deploy to GitHub Pages
+      - name: Desplegar
         id: deployment
         uses: actions/deploy-pages@v4
